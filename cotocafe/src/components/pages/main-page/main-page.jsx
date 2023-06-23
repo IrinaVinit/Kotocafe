@@ -1,7 +1,10 @@
 import React from "react";
+import './main-page.css'
 
 function MainPage() {
-  return <></>;
+  return <main>
+
+  </main>;
 }
 
 export default MainPage;

@@ -1,7 +1,12 @@
 import React from "react";
+import Button from "../../ui/button/button";
 
 function Nav() {
-  return <></>;
+  return (
+    <>
+      <Button>Купить билет</Button>
+    </>
+  );
 }
 
 export default Nav;
