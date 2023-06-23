@@ -1,4 +1,6 @@
 import React from "react";
+import './about.css';
+import Title, { TitleSize } from "../../ui/title/title";
 
 function About() {
   return (

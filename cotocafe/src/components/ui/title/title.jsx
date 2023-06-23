@@ -7,7 +7,7 @@ export const TitleSize = {
   DEFAULT: ""
 };
 
-function Title(size) {
+function Title({size, children}) {
   return <h1 className={`title${size ? ` title_${size}` : ""}`}>{children}</h1>;
  
 }
