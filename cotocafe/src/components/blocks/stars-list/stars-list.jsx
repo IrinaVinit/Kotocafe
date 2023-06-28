@@ -4,7 +4,7 @@ import "./stars-list.css";
 import StarCard from "../../ui/star-card/star-card";
 import Button from "../../ui/button/button";
 
-function StarsList() {
+function StarsList({stars}) {
   return (
     <section className="star-list">
       <Title>Наши звезды</Title>

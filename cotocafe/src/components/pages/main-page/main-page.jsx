@@ -3,11 +3,11 @@ import "./main-page.css";
 import About from "../../blocks/about/about";
 import StarsList from "../../blocks/stars-list/stars-list";
 
-function MainPage() {
+function MainPage({stars}) {
   return (
     <main>
       <About />
-      <StarsList/>
+      <StarsList stars={stars}/>
     </main>
   );
 }

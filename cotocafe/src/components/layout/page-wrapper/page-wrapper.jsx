@@ -4,11 +4,11 @@ import Footer from "../footer/footer";
 import MainPage from "../../pages/main-page/main-page";
 
 // Обёртка для контента страниц
-function PageWrapper() {
+function PageWrapper(props) {
   return (
   <>
   <Header/>
-  <MainPage/>
+  <MainPage {...props}/>
   <Footer/>
   </>
   )
