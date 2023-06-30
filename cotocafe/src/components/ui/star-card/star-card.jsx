@@ -1,24 +1,24 @@
 import React from "react";
 import Title, { TitleSize } from '../title/title'
 import "./star-card.css";
+import StarIcon from "../star-icon/star-icon";
 
-function StarCard() {
+function StarCard({star}) {
   return (
     <article className="star-card">
       <figure className="star-card__figure">
         <img
-          src="https://i.ibb.co/27Mdx7k/Rectangle-4-2.png"
+          src={star.image}
           className="star-card__image"
           width={313}
           height={320}
-          alt="изображение кота"
+          alt={star.name}
         />
-        <span className="star-card__icon">Ласковый</span>
+       <StarIcon className="star-card__icon" feature={star.feature} />
       </figure>
-      <Title size={TitleSize.SMALL}>Кошка Сью</Title>
-      <p className="star-card__text">
-        Эта юная красавица очень общительная и ласковая уже с первого дня, как
-        приехала в кафе.
+      <Title size={TitleSize.SMALL}>{star.name}</Title>
+      <p className="star-card__text"  dangerouslySetInnerHTML={{ __html: star.about }}>
+       
       </p>
     </article>
   );
